@@ -1,0 +1,8 @@
+<app-banner></app-banner>
+<div class="container contenedor-tarjetas">
+    <app-tarjeta [routerLink]="['/','detalles',item?.id]" [datos]="item" *ngFor='let item of cards'></app-tarjeta>
+</div>
+<br>
+<div class="container">
+    <app-favoritos></app-favoritos>
+</div>
